@@ -3,7 +3,7 @@
 }
 
 .btn-login {
-  background-color: #E50914;
+  background-color: #e50914;
 }
 
 .hero {
@@ -22,7 +22,6 @@
   height: 100vh;
   background-image: url(./images/bg6.png);
   background-size: cover;
-
 }
 .background-hero-tv {
   width: 100%;
@@ -42,7 +41,7 @@
 }
 
 .btn-watch {
-  background-color: #E50914 !important;
+  background-color: #e50914 !important;
 }
 
 .tv-s {
@@ -65,9 +64,9 @@
   background-color: #343434 !important;
 }
 
-.formPayment::-webkit-input-placeholder {
+/* .formPayment::-webkit-input-placeholder {
   color: #a9a9a9 !important;
-}
+} */
 
 .btn-full {
   width: 100%;
@@ -78,22 +77,23 @@
 }
 
 .here {
-  color:  rgb(255, 58, 94);
+  color: rgb(255, 58, 94);
   cursor: pointer;
 }
 
 .dropDivid {
-  padding-top: 1px;
   padding-bottom: 1px;
+  padding-top: 1px;
 }
 
 .sectionMain {
-  width: 65%;
+  width: 80%;
   margin: auto;
 }
 
 .cardEpisode {
-  width: 100%;
+  width: 40%;
+  margin-left: auto;
 }
 
 .pDetailMain {
@@ -107,10 +107,10 @@
 }
 
 .imgEpisode {
-  width: 100%;
+  position: relative;
   object-fit: cover;
   opacity: 0.5;
-  position: relative;
+  width: 100%;
 }
 
 .cardEpisode {
@@ -118,13 +118,13 @@
 }
 
 .cardEpisode::after {
-  content: 'In Play Now';
+  content: "In Play Now";
   position: absolute;
   font-weight: bold;
-  top: 35%;
-  left: 40%;
   display: block;
   color: white;
+  left: 40%;
+  top: 35%;
 }
 
 .changePhotoBtn {
@@ -132,11 +132,11 @@
 }
 
 .sectionPayment {
-  height: 93vh;
-  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  display: flex;
+  height: 93vh;
 }
 
 .pPayment {
@@ -144,24 +144,24 @@
 }
 
 .btnSubmitPayment {
+  background-color: #cf202c !important;
   width: 100%;
-  background-color: #CF202C !important;
 }
 
 input[type="file"] {
   display: none;
 }
 
-.labelInputFile {
+.placeHolderFile {
   background-color: white !important;
-  color: #CF202C !important;
-  height: 50px;
-  width: 100%;
+  justify-content: space-between;
+  color: #cf202c !important;
+  font-weight: bold;
   line-height: 50px;
   text-align: left;
-  padding: 0 15px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
   cursor: pointer;
+  padding: 0 15px;
+  display: flex;
+  height: 50px;
+  width: 100%;
 }

@@ -14,15 +14,15 @@ function VideoDetailAdm() {
   const [isLogin, setIsLogin] =useState(false)
 
   const navigate = useNavigate()
-  const user = JSON.parse(localStorage.getItem('user'))
+  // const user = JSON.parse(localStorage.getItem('user'))
 
-  useEffect(() => {
-    if(user) setIsLogin(true)
-    else {
-      setIsLogin(false)
-      navigate('/')
-    }
-  }, [user])
+  // useEffect(() => {
+  //   if(user) setIsLogin(true)
+  //   else {
+  //     setIsLogin(false)
+  //     navigate('/')
+  //   }
+  // }, [user])
 
   const [show, setShow] = useState(false);
 

@@ -13,7 +13,8 @@ const initialUser = {
 }
 
 function RegisterModal({ handleClose, show }) {
-  const [isRegister, setIsRegister] = useState(true)
+  const [isRegister, setIsRegister] = useState(false)
+
 
   const switchRegister = () => {
     setUserData(initialUser)
@@ -32,6 +33,8 @@ function RegisterModal({ handleClose, show }) {
     e.preventDefault()
     handleClose()
     if (isRegister) {
+      localStorage.setItem("user")
+    } else {
       localStorage.setItem("user", JSON.stringify(userData))
     }
   }

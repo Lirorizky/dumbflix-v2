@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import {Link} from 'react-router-dom'
 
-function SeriesList({seriesImg, title, year}) {
+function SeriesListAdm({seriesImg, title, year}) {
   return (
     <Link to='/video-adm' className='text-decoration-none'>
     <Card className='rounded border-0 bg-black text-white'>
@@ -16,4 +16,4 @@ function SeriesList({seriesImg, title, year}) {
   );
 }
 
-export default SeriesList;
+export default SeriesListAdm;

@@ -78,9 +78,9 @@ function App() {
         }/>
 
         <Route path='/video-adm' element={
-          <Layout>
+          <LayoutAdm>
             <VideoDetailAdm />
-          </Layout>
+          </LayoutAdm>
         }/>
   
         <Route path='/profile' element={

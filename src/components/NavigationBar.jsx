@@ -17,7 +17,7 @@ function Navbar() {
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = JSON.parse(localStorage.getItem("user")); 
 
   const [isLogin, setIsLogin] = useState(false);
 
