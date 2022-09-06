@@ -33,7 +33,6 @@ function RegisterModal({ handleClose, show }) {
     handleClose()
     if (isRegister) {
       localStorage.setItem("user", JSON.stringify(userData))
-
     }
   }
 

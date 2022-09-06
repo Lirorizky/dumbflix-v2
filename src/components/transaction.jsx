@@ -2,6 +2,18 @@ import Table from 'react-bootstrap/Table';
 import '../assets/styles/style.css'
 import DropdownTransaction from './dropdown';
 
+const style = {
+  approved: {
+    color: 'green'
+  },
+  inactive: {
+    color: 'red'
+  },
+  pending: {
+    color: "orange"
+  }
+}
+
 function Transaction() {
   return (
             <>
@@ -24,8 +36,8 @@ function Transaction() {
                   <td>Radif Ganteng</td>
                   <td>bca.jpg</td>
                   <td>26 / Hari</td>
-                  <td>Active</td>
-                  <td>Approved</td>
+                  <td style={style.approved}>Active</td>
+                  <td style={style.approved}>Approved</td>
                   <td><DropdownTransaction /></td>
                 </tr>
                 <tr>
@@ -33,8 +45,8 @@ function Transaction() {
                   <td>Haris Rahman</td>
                   <td>bni.jpg</td>
                   <td>26 / Hari</td>
-                  <td>Active</td>
-                  <td>Approved</td>
+                  <td style={style.approved}>Active</td>
+                  <td style={style.approved}>Approved</td>
                   <td><DropdownTransaction /></td>
                 </tr>
                 <tr>
@@ -42,8 +54,8 @@ function Transaction() {
                   <td>Amin Subagiyo</td>
                   <td>permata.jpg</td>
                   <td>0 / Hari</td>
-                  <td>Not Active</td>
-                  <td>Cancel</td>
+                  <td style={style.inactive}>Not Active</td>
+                  <td style={style.inactive}>Cancel</td>
                   <td><DropdownTransaction /></td>
                 </tr>
                 <tr>
@@ -51,8 +63,8 @@ function Transaction() {
                   <td>Haris Astina</td>
                   <td>permata.jpg</td>
                   <td>0 / Hari</td>
-                  <td>Not Active</td>
-                  <td>Pending</td>
+                  <td style={style.inactive}>Not Active</td>
+                  <td style={style.pending}>Pending</td>
                   <td><DropdownTransaction /></td>
                 </tr>
                 <tr>
@@ -60,8 +72,8 @@ function Transaction() {
                   <td>Aziz Oni On</td>
                   <td>bi.jpg</td>
                   <td>0 / Hari</td>
-                  <td>Not Active</td>
-                  <td>Pending</td>
+                  <td style={style.inactive}>Not Active</td>
+                  <td style={style.pending}>Pending</td>
                   <td><DropdownTransaction /></td>
                 </tr>
                 <tr>
@@ -69,8 +81,8 @@ function Transaction() {
                   <td>Sugeng No Pants</td>
                   <td>bni.jpg</td>
                   <td>0 / Hari</td>
-                  <td>Not Active</td>
-                  <td>Pending</td>
+                  <td style={style.inactive}>Not Active</td>
+                  <td style={style.pending}>Pending</td>
                   <td><DropdownTransaction /></td>
                 </tr>
               </tbody>

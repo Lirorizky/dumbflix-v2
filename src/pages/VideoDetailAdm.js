@@ -53,8 +53,8 @@ function VideoDetailAdm() {
               <Modal.Title className="text-white">Add Episode</Modal.Title>
             </Modal.Header> */}
             <Modal.Body className="text-white bg-dark border-0 text-white">
-              <Form.Group className="mb-2 d-flex bg-dark">
-                <Form.Control placeholder="Title" className='me-2 bg-dark titleEps' disable/>
+              <Form.Group className="mb-2 d-flex">
+                <Form.Control placeholder="Title" className='me-2 bg-dark titleEps text-white'/>
                 <Form.Label className="input-img d-flex justify-content-between w-50">
                   <p>
                     <span style={{ fontSize: '14px'}}>Attach Thumbnail</span>

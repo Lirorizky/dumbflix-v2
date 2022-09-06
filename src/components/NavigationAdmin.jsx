@@ -107,7 +107,7 @@ function NavbarAdm() {
             </Link>
           </div> */}
           <div>
-            {!isLoginAdmin ? (
+            {isLoginAdmin ? (
               <Navbar bg="dark" variant="dark" expand="lg" className="navbar" >
                 <Container fluid className="">
                   <Navbar.Toggle aria-controls="navbarScroll" />

@@ -40,8 +40,7 @@ const AddFilmList = () => {
 
               <Dropdown.Menu variant="dark">
                 <Dropdown.Item href="#/action-1">Movies</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Comedy</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Horror</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Short Movies</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <div className="d-flex justify-content-end me-5" style={{ width: '65%'}}>
